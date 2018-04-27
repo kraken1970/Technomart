@@ -16,5 +16,6 @@
     "**/gulpfile.js": false,
     "Dockerfile.dev": false,
     "**/.vscode": false
-  }
+  },
+  "git.ignoreLimitWarning": true
 }
