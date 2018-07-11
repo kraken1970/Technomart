@@ -1,0 +1,44 @@
+.breadcrambs {
+  display: flex;
+  li {
+    margin: 2vw 0;
+    margin-right: 3.33vw;
+
+    a {
+      text-transform: uppercase;
+      font-family: "PTSansRegular";
+      font-size: 1.0833vw;
+      position: relative;
+      &::before {
+        content: "";
+        width: 0.66vmax;
+        height: 1vmax;
+        background-image: url(../../assets/images/icon/icon-right-small.png);
+        position: absolute;
+        top: 0;
+        right: -2vw;
+      }
+    }
+    .last_crambs::before {
+      background-image: none;
+    }
+  }
+}
+
+.icon_svg--wrap {
+  width: 1.16vw;
+}
+
+.header_page {
+  background-color: #f2f6f8;
+  h2 {
+    text-transform: uppercase;
+    font-family: "CuprumRegular";
+    font-weight: 400;
+    font-size: 2.5vmax;
+    line-height: 2.5vmax;
+    margin-left: 2.5vw;
+    padding-top: 2.75vmax;
+    padding-bottom: 2.75vmax;
+  }
+}
