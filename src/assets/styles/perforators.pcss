@@ -1,9 +1,12 @@
+.cart-active {
+  background-color: #ee3643;
+}
+
 .breadcrambs {
   display: flex;
   li {
     margin: 2vw 0;
     margin-right: 3.33vw;
-
     a {
       text-transform: uppercase;
       font-family: "PTSansRegular";
@@ -29,8 +32,9 @@
   width: 1.16vw;
 }
 
-.header_page {
+.head_page {
   background-color: #f2f6f8;
+  margin-bottom: 2.5vh;
   h2 {
     text-transform: uppercase;
     font-family: "CuprumRegular";
@@ -40,5 +44,115 @@
     margin-left: 2.5vw;
     padding-top: 2.75vmax;
     padding-bottom: 2.75vmax;
+  }
+}
+
+.filters_goods-cart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 18.333vw;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.66vw;
+}
+
+.dubble-slider--block {
+  /*temporary!*/
+  height: 16vh;
+  outline: 1px solid red;
+}
+
+.filters_head {
+  background-color: #f7f3ec;
+  padding-left: 1.5vw;
+  height: 4.75vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.75vh;
+  h3 {
+    font-family: "PTSansRegular";
+    font-weight: 400;
+    font-size: 1.0833vw;
+    line-height: 1.0833vw;
+    text-transform: uppercase;
+  }
+}
+
+.productions {
+  /*temporary!*/
+  height: 23vh;
+  outline: 1px solid red;
+}
+
+.goods-cart--selector {
+  background-color: #f7f3ec;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  margin-bottom: 2.5vh;
+  font-family: "PTSansRegular";
+  font-size: 1.0833vw;
+  line-height: 1.0833vw;
+  text-transform: uppercase;
+  height: 4.75vh;
+  display: flex;
+  align-items: center;
+  p {
+    cursor: pointer;
+  }
+  .head_select {
+    cursor: none;
+    opacity: 1;
+    margin-right: 10.66vw;
+  }
+  .by_price {
+    margin-right: 5vw;
+  }
+  .by_type {
+    margin-right: 4.6vw;
+  }
+  .by_function {
+    margin-right: 3vw;
+  }
+  .select_up {
+    margin-right: 1.5vw;
+  }
+  p.active_select {
+    color: #ee3643;
+    opacity: 1;
+  }
+  .type_select {
+    border-bottom: 1px solid #ee3643;
+    border-bottom-style: dotted;
+    opacity: 0.3;
+  }
+  .type_select:hover {
+  }
+}
+
+.triangle-select {
+  .active_select {
+    fill: #ee3643;
+    opacity: 1;
+  }
+  svg {
+    width: 0.916vw;
+    fill: #c5c3c3;
+    &:hover {
+      fill: #000000;
+    }
+    &:active {
+      fill: #ee3643;
+    }
+  }
+}
+
+.goods-cart .item_pops_good {
+  margin-bottom: 2.5vh;
+  &:nth-child(n + 7) {
+    margin-bottom: 6.75vh;
   }
 }

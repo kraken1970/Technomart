@@ -485,7 +485,7 @@ html, body {
   width: -webkit-calc(100% + (100vw - 100%));
   width: calc(100% + (100vw - 100%));
   overflow-x: hidden;
-  font-family: 'CuprumRegular', sans-serif;
+  font-family: "CuprumRegular", sans-serif;
   font-size: 1.41665vw;
   position: relative;
 }
@@ -505,7 +505,7 @@ ul, li {
 }
 
 img {
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
 }
 
@@ -542,15 +542,16 @@ a {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  font-family: 'CuprumRegular', sans-serif;
+  font-family: "CuprumRegular", sans-serif;
   border-radius: 0.25vw;
 }
 
 .block-none {
-  display: none!important;
+  display: none !important;
 }
 
 .wrapper {
+  max-width: 940px;
   width: 78.333vw;
   margin: 0 auto;
   /*временные отметки:*/
@@ -605,11 +606,11 @@ a {
   position: relative;
   text-transform: uppercase;
   font-size: 2vw;
-  font-family: 'CuprumRegular', sans-serif;
+  font-family: "CuprumRegular", sans-serif;
 }
 
 .logo-btn::after {
-    content: '';
+    content: "";
     width: 100%;
     height: 0.4166vmax;
     background-color: #b52933;
@@ -637,7 +638,7 @@ a {
   outline: none;
   color: #fff;
   background-color: #293449;
-  font-family: 'CuprumRegular', sans-serif;
+  font-family: "CuprumRegular", sans-serif;
   font-size: 1.416vw;
   padding: 0 0 0 4.16vw;
   width: 22.66vw;
@@ -674,8 +675,8 @@ a {
 }
 
 .wrap_tab-cart:hover {
-   background-image: url(../../assets/images/icon/icon-cart-hover.png);
-   background-color: #212a3a;
+    background-image: url(../../assets/images/icon/icon-cart-hover.png);
+    background-color: #212a3a;
   }
 
 .wrap_tab-cart:active {
@@ -749,7 +750,7 @@ a {
 
 .shop-config {
   color: #ee3643;
-  font-family: 'CuprumItalic', sans-serif;
+  font-family: "CuprumItalic", sans-serif;
   font-size: 1.333vw;
   line-height: 1.916vw;
   width: 16.333vw;
@@ -760,8 +761,8 @@ a {
   font-size: 1.75vw;
   line-height: 1.5vw;
   display: inline-block;
-  padding: .83vmax 4.33vw .83vmax 6.16vw;
-  border: .25vw solid white;
+  padding: 0.83vmax 4.33vw 0.83vmax 6.16vw;
+  border: 0.25vw solid white;
   background-image: url(../../assets/images/icon/icon-phone.png);
   background-repeat: no-repeat;
   background-position: 1.25vw center;
@@ -797,7 +798,7 @@ a {
     background-color: #ffffff;
     color: black;
     font-size: 1.75vw;
-    font-family: 'CuprumRegular';
+    font-family: "CuprumRegular";
   }
 
 .double-button .btn:hover {
@@ -834,10 +835,31 @@ a {
   color: #fff;
   font-size: 1.416vw;
   line-height: 1.416vw;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#32425c), color-stop(99%, #32425c), to(#32425c));
-  background-image: -webkit-linear-gradient(bottom, #32425c 0%, #32425c 99%, #32425c 100%);
-  background-image: -o-linear-gradient(bottom, #32425c 0%, #32425c 99%, #32425c 100%);
-  background-image: linear-gradient(to top, #32425c 0%, #32425c 99%, #32425c 100%);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom, left top,
+    from(#32425c),
+    color-stop(99%, #32425c),
+    to(#32425c)
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    #32425c 0%,
+    #32425c 99%,
+    #32425c 100%
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    #32425c 0%,
+    #32425c 99%,
+    #32425c 100%
+  );
+  background-image: linear-gradient(
+    to top,
+    #32425c 0%,
+    #32425c 99%,
+    #32425c 100%
+  );
   -webkit-box-shadow: inset 0 -0.416vw 0 #293449;
           box-shadow: inset 0 -0.416vw 0 #293449;
 }
@@ -923,7 +945,7 @@ a {
   }
 
 .item-good h3 {
-    font-family: 'CuprumBold';
+    font-family: "CuprumBold";
     color: #ffffff;
     font-size: 2vw;
     line-height: 2vw;
@@ -1006,7 +1028,7 @@ a {
   width: 51.66vw;
   height: 22.16vmax;
   background-image: url(../../assets/images/slide-block-icon/slider1.png);
-  background-position:  center;
+  background-position: center;
   -webkit-background-size: cover;
           background-size: cover;
 }
@@ -1043,7 +1065,6 @@ a {
   right: 1.66vw;
   border: none;
   outline: none;
-  
   color: #fff;
   background-color: transparent;
   font-size: 7.16vw;
@@ -1078,7 +1099,7 @@ a {
 }
 
 .dot-active {
-  background-color: #ee3643;   
+  background-color: #ee3643;
 }
 
 .pops-good {
@@ -1150,6 +1171,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 18.33vw;
+  max-width: 220px;
   border: 1px solid #e5e5e5;
 }
 
@@ -1167,8 +1189,8 @@ a {
 }
 
 .item_pops_good:hover {
-    -webkit-box-shadow: 0 .83vw 2.08vw rgba(41, 52, 73, 0.5);
-            box-shadow: 0 .83vw 2.08vw rgba(41, 52, 73, 0.5);
+    -webkit-box-shadow: 0 0.83vw 2.08vw rgba(41, 52, 73, 0.5);
+            box-shadow: 0 0.83vw 2.08vw rgba(41, 52, 73, 0.5);
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -1201,7 +1223,7 @@ a {
     background-repeat: no-repeat;
     -webkit-background-size: 1.416vw 1.33vmax;
             background-size: 1.416vw 1.33vmax;
-    background-position:  1vw center;
+    background-position: 1vw center;
   }
 
 .pops_btn-wrap .good_item-btn:hover {
@@ -1233,7 +1255,7 @@ a {
     }
 
 .pops_good-title {
-  font-family: 'PTSansBold';
+  font-family: "PTSansBold";
   font-size: 1.5vw;
   line-height: 1.66vmax;
 }
@@ -1241,7 +1263,7 @@ a {
 .old_price {
   text-decoration: line-through;
   color: #999;
-  font-family: 'PTSansBold';
+  font-family: "PTSansBold";
   font-size: 1.416vw;
   line-height: 1.5vmax;
 }
@@ -1250,14 +1272,14 @@ a {
   width: 10.25vw;
   height: 3.16vmax;
   color: #ffffff;
-  font-family: 'PTSansBold';
+  font-family: "PTSansBold";
   font-size: 1.416vw;
   background-color: #ee3643;
   position: relative;
 }
 
 .btn.new_price::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: -3.16vw;
@@ -1318,7 +1340,7 @@ a {
   font-size: 1.08vw;
   line-height: 2vmax;
   margin-bottom: 5.25vw;
-  font-family: 'PTSansBold';
+  font-family: "PTSansBold";
 }
 
 .control_s-d {
@@ -1339,7 +1361,7 @@ a {
 }
 
 .our_services::after {
-    content: '';
+    content: "";
     width: 0.83vw;
     height: 22.66vmax;
     background: url(../../assets/images/servise-after.png) no-repeat;
@@ -1353,7 +1375,7 @@ a {
   -webkit-box-shadow: inset 0 -1px 0 #293449;
           box-shadow: inset 0 -1px 0 #293449;
   color: #ffffff;
-  font-family: 'CuprumBold';
+  font-family: "CuprumBold";
   font-size: 1.75vw;
   line-height: 2.5vmax;
   padding: 1.416vmax 0 1.416vmax 2vw;
@@ -1392,7 +1414,6 @@ a {
 .our_services-content {
   background-repeat: no-repeat;
   background-position: 100% top;
-  
   width: 100%;
   margin-top: 0.75vmax;
   margin-left: 6.66vw;
@@ -1408,7 +1429,7 @@ a {
 
 .our_services-content .our_services-content-text {
     font-size: 1.083vw;
-    font-family: 'PTSansBold';
+    font-family: "PTSansBold";
   }
 
 .our_services-content .btn {
@@ -1458,7 +1479,7 @@ a {
   }
 
 .contact-map .contact-map_text {
-    font-family: 'PTSansRegular';
+    font-family: "PTSansRegular";
     line-height: 2vmax;
     font-size: 1.083vw;
     margin-bottom: 2.5vmax;
@@ -1496,7 +1517,7 @@ a {
 }
 
 .transport_companies::before {
-    content: '';
+    content: "";
     background-color: #fb565a;
     width: 2vw;
     height: 0.16vmax;
@@ -1907,6 +1928,10 @@ ul.client-service .orders::after {
     font-size: 1.16vw;
   }
 
+.cart-active {
+  background-color: #ee3643;
+}
+
 .breadcrambs {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1945,11 +1970,12 @@ ul.client-service .orders::after {
   width: 1.16vw;
 }
 
-.header_page {
+.head_page {
   background-color: #f2f6f8;
+  margin-bottom: 2.5vh;
 }
 
-.header_page h2 {
+.head_page h2 {
     text-transform: uppercase;
     font-family: "CuprumRegular";
     font-weight: 400;
@@ -1958,6 +1984,157 @@ ul.client-service .orders::after {
     margin-left: 2.5vw;
     padding-top: 2.75vmax;
     padding-bottom: 2.75vmax;
+  }
+
+.filters_goods-cart {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filters {
+  width: 18.333vw;
+  min-width: 220px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 1.66vw;
+}
+
+.dubble-slider--block {
+  /*temporary!*/
+  height: 16vh;
+  outline: 1px solid red;
+}
+
+.filters_head {
+  background-color: #f7f3ec;
+  padding-left: 1.5vw;
+  height: 4.75vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.75vh;
+}
+
+.filters_head h3 {
+    font-family: "PTSansRegular";
+    font-weight: 400;
+    font-size: 1.0833vw;
+    line-height: 1.0833vw;
+    text-transform: uppercase;
+  }
+
+.productions {
+  /*temporary!*/
+  height: 23vh;
+  outline: 1px solid red;
+}
+
+.goods-cart--selector {
+  background-color: #f7f3ec;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  margin-bottom: 2.5vh;
+  font-family: "PTSansRegular";
+  font-size: 1.0833vw;
+  line-height: 1.0833vw;
+  text-transform: uppercase;
+  height: 4.75vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.goods-cart--selector p {
+    cursor: pointer;
+  }
+
+.goods-cart--selector .head_select {
+    cursor: none;
+    opacity: 1;
+    margin-right: 10.66vw;
+  }
+
+.goods-cart--selector .by_price {
+    margin-right: 5vw;
+  }
+
+.goods-cart--selector .by_type {
+    margin-right: 4.6vw;
+  }
+
+.goods-cart--selector .by_function {
+    margin-right: 3vw;
+  }
+
+.goods-cart--selector .select_up {
+    margin-right: 1.5vw;
+  }
+
+.goods-cart--selector p.active_select {
+    color: #ee3643;
+    opacity: 1;
+  }
+
+.goods-cart--selector .type_select {
+    border-bottom: 1px solid #ee3643;
+    border-bottom-style: dotted;
+    opacity: 0.3;
+  }
+
+.goods-cart--selector .type_select:hover {
+  }
+
+.triangle-select .active_select {
+    fill: #ee3643;
+    opacity: 1;
+  }
+
+.triangle-select svg {
+    width: 0.916vw;
+    fill: #c5c3c3;
+  }
+
+.triangle-select svg:hover {
+      fill: #000000;
+    }
+
+.triangle-select svg:active {
+      fill: #ee3643;
+    }
+
+.goods-cart .item_pops_good {
+  margin-bottom: 2.5vh;
+}
+
+.goods-cart .item_pops_good:nth-child(n + 7) {
+    margin-bottom: 6.75vh;
   }
 
 /* Large Devices, Wide Screens */

@@ -1,32 +1,10 @@
-// Форма входа
-let login = document.querySelector(".login");
-let loginBlock = document.querySelector(".double-button");
-let clientBlock = document.querySelector(".client-block");
-let searchClient = document.querySelector(".client");
-const EscCode = 27;
-
-login.addEventListener("click", function(event) {
-  event.preventDefault();
-  loginBlock.classList.add("block-none");
-  clientBlock.classList.remove("block-none");
-});
-
-window.addEventListener("keydown", function(event) {
-  if (event.keyCode === EscCode) {
-    if (loginBlock.classList.contains("block-none")) {
-      loginBlock.classList.remove("block-none");
-      clientBlock.classList.add("block-none");
-    }
-  }
-});
-
 // Слайдер
-let slideLeftControl = document.querySelector(".slide-left");
-let slideRightControl = document.querySelector(".slide-right");
-let dotLeft = document.querySelector(".dot-left");
-let dotRight = document.querySelector(".dot-right");
-let slideContainer = document.querySelector(".slide-container");
-let width = document.querySelector(".slide1").clientWidth;
+const slideLeftControl = document.querySelector(".slide-left");
+const slideRightControl = document.querySelector(".slide-right");
+const dotLeft = document.querySelector(".dot-left");
+const dotRight = document.querySelector(".dot-right");
+const slideContainer = document.querySelector(".slide-container");
+const width = document.querySelector(".slide1").clientWidth;
 
 slideLeftControl.addEventListener("click", function(event) {
   event.preventDefault();
@@ -45,23 +23,6 @@ slideRightControl.addEventListener("click", function(event) {
   dotLeft.classList.add("dot-active");
   dotRight.classList.remove("dot-active");
 });
-
-// карточки товаров
-const cartGood = document.querySelectorAll(".item_pops_good");
-const popsImg = document.querySelectorAll(".img-wrap");
-const popsBtn = document.querySelectorAll(".pops_btn-wrap");
-
-for (let i = 0; i < cartGood.length; i++) {
-  cartGood[i].addEventListener("mousemove", function() {
-    popsImg[i].classList.add("block-none");
-    popsBtn[i].classList.remove("block-none");
-  });
-
-  cartGood[i].addEventListener("mouseout", function() {
-    popsImg[i].classList.remove("block-none");
-    popsBtn[i].classList.add("block-none");
-  });
-}
 
 // Блок услуг
 const btnServices = document.querySelectorAll(".our_services-block");
