@@ -86,7 +86,7 @@
 
   </header>
 
-  <main class="wrapper">
+  <main class="wrapper wrapper_pages">
     <ul class="breadcrambs">
       <li>
         <a href="#">
@@ -120,9 +120,61 @@
             <h3>ФИЛЬТР:</h3>
           </div>
           <h4>ЦЕНА:</h4>
-          <div class="dubble-slider--block"></div>
+          <div class="dubble-slider--block">
+
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="width: 70%"></div>
+              </div>
+              <div class="toggle toggle-min">&#8226;</div>
+              <div class="toggle toggle-max">&#8226;</div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">
+                <input name="min-price" type="text" value="0">
+              </label>
+              <label class="max-price">
+                <input name="max-price" type="text" value="30000">
+              </label>
+            </div>
+
+          </div>
           <h4>ПРОИЗВОДИТЕЛИ:</h4>
-          <div class="productions"></div>
+          <div class="productions">
+            <label>
+              <input type="checkbox" name="" checked> BOSCH
+              <span></span>
+            </label>
+            <label>
+              <input type="checkbox" name=""> ИНТЕРСКОЛ
+              <span></span>
+            </label>
+            <label>
+              <input type="checkbox" name="" checked> MAKIta
+              <span></span>
+            </label>
+            <label>
+              <input type="checkbox" name=""> Dewalt
+              <span></span>
+            </label>
+            <label>
+              <input type="checkbox" name=""> Hitachi
+              <span></span>
+            </label>
+          </div>
+          <div class="supply">
+            <h4>ПИТАНИЕ:</h4>
+            <div class="radio_select">
+              <label>
+                <input type="radio" name="supply" checked> АККУМУЛЯТОРНЫЕ
+                <span></span>
+              </label>
+              <label>
+                <input type="radio" name="supply"> СЕТЕВЫЕ
+                <span></span>
+              </label>
+            </div>
+          </div>
         </form>
       </div>
       <div class="goods_right--block">
