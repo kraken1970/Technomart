@@ -14,9 +14,6 @@ function dubleSlider() {
 
   const devider = maxPriceInput.value / max;
 
-  console.log(parseInt(min), parseInt(max));
-  console.log("maxInput", maxPriceInput);
-
   thumbMin.onmousedown = function(e) {
     let thumbCoords = getCoords(thumbMin);
     let shiftX = e.pageX - thumbCoords.left;
@@ -41,8 +38,6 @@ function dubleSlider() {
     };
 
     document.onmouseup = function() {
-      console.log(getCoords(thumbMin));
-      console.log(min);
       document.onmousemove = document.onmouseup = null;
     };
 
@@ -65,15 +60,12 @@ function dubleSlider() {
         newLeft = rangeEnd;
       }
       max = newLeft;
-      console.log("RA", rangeEnd);
       thumbMax.style.left = newLeft + "px";
       bar.style.width = max + "px";
       maxPriceInput.value = parseInt(devider * max);
     };
 
     document.onmouseup = function() {
-      console.log(getCoords(thumbMax));
-      console.log(max);
       document.onmousemove = document.onmouseup = null;
     };
 
