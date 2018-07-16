@@ -31,9 +31,10 @@ function dubleSlider() {
       }
 
       min = newLeft;
+
       thumbMin.style.left = newLeft + "px";
       bar.style.marginLeft = min + "px";
-      bar.style.width = barWidth - min + "px";
+      bar.style.width = deltaBar() + "px";
       minPriceInput.value = parseInt(devider * min);
     };
 
@@ -61,7 +62,7 @@ function dubleSlider() {
       }
       max = newLeft;
       thumbMax.style.left = newLeft + "px";
-      bar.style.width = max + "px";
+      bar.style.width = deltaBar() + "px";
       maxPriceInput.value = parseInt(devider * max);
     };
 
@@ -84,6 +85,26 @@ function dubleSlider() {
       left: box.left + pageXOffset
     };
   }
+
+  let deltaBar = () => {
+    return getCoords(thumbMax).left - getCoords(thumbMin).left;
+  };
+
+  minPriceInput.onchange = e => {
+    e.preventDefault();
+    const leftChange = parseInt(minPriceInput.value / devider);
+    thumbMin.style.left = leftChange + "px";
+    bar.style.marginLeft = leftChange + "px";
+    bar.style.width = deltaBar() + "px";
+    console.log("value", minPriceInput.value);
+  };
+
+  maxPriceInput.onchange = e => {
+    e.preventDefault();
+    const rightChange = parseInt(maxPriceInput.value / devider);
+    thumbMax.style.left = rightChange + "px";
+    bar.style.width = deltaBar() + "px";
+  };
 }
 
 dubleSlider();
