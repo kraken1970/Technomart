@@ -84,18 +84,18 @@
 .range-controls .scale {
   height: 2px;
   background: #d7dcde;
+  position: relative;
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 100%;
   height: 2px;
   background: #00ca74;
 }
 
 .range-controls .toggle {
   position: absolute;
-  top: 40%;
-  left: 0px;
+  top: -0.85vh;
   width: 5px;
   height: 5px;
   cursor: pointer;
@@ -109,11 +109,11 @@
 }
 
 .range-controls .toggle-min {
-  left: 1.66vw;
+  left: 0;
 }
 
 .range-controls .toggle-max {
-  left: 65%;
+  left: calc(100% - 1.1666vw);
 }
 
 .price-controls {
@@ -124,6 +124,17 @@
   font-size: 16px;
   display: inline-block;
   width: 50%;
+  position: relative;
+}
+
+.min-price::after {
+  content: "";
+  width: 0.83vw;
+  height: 1px;
+  background-color: #444;
+  position: absolute;
+  top: 50%;
+  right: -0.5vw;
 }
 
 .max-price {
@@ -193,6 +204,10 @@
   }
 }
 
+.supply {
+  margin-bottom: 8.375vh;
+}
+
 .radio_select {
   display: flex;
   flex-direction: column;
@@ -213,16 +228,39 @@
   span {
     width: 2vmax;
     height: 2vmax;
-    border: 0.33vmax solid #e5e5e5;
+    border: 0.33vmax solid #b5b5b5;
     border-radius: 50%;
     position: absolute;
     left: 0;
     top: 1.5vh;
   }
   input:checked + span {
-    outline: 0.5vw solid #e5e5e5;
+    outline: 0.5vw solid #b5b5b5;
     outline-offset: -1.3vw;
   }
+}
+
+.goods_btn {
+  background-color: transparent;
+  font-family: "PTSansRegular";
+  font-size: 1.0833vw;
+  line-height: 1.0833vw;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+  border-radius: 0.3vw;
+  text-align: center;
+  display: inline-block;
+  &:hover {
+    border: 1px solid #bdc6ca;
+  }
+  &:active {
+    border: 1px solid #ee3643;
+  }
+}
+
+.goods_select--btn {
+  padding: 1.75vh 3.33vw;
 }
 
 .goods-cart--selector {
@@ -299,5 +337,42 @@
   margin-bottom: 2.5vh;
   &:nth-child(n + 7) {
     margin-bottom: 6.75vh;
+  }
+}
+
+.goods_pages--selector {
+  font-size: 0;
+  margin-bottom: 7.5vh;
+}
+
+.number_pages--btn {
+  padding: 1.75vh 1.6vw;
+  margin-right: 0.8333vw;
+}
+
+.number_pages--btn.home_page-btn {
+  color: #ffffff;
+  background-color: #ee3643;
+  border: none;
+}
+
+.nex_pages--btn {
+  padding: 1.75vh 2.75vw;
+}
+
+.context_page {
+  background-color: #f2f6f8;
+  padding-top: 8.5vh;
+  padding-bottom: 8.875vh;
+  .subtitle {
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    margin-bottom: 4.625vh;
+  }
+  .text {
+    font-family: "PTSansRegular";
+    line-height: 2vh;
+    font-size: 1.053vw;
   }
 }

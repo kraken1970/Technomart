@@ -86,7 +86,7 @@
 
   </header>
 
-  <main class="wrapper wrapper_pages">
+  <main class="wrapper">
     <ul class="breadcrambs">
       <li>
         <a href="#">
@@ -124,17 +124,18 @@
 
             <div class="range-controls">
               <div class="scale">
-                <div class="bar" style="width: 70%"></div>
+                <div class="bar"></div>
+                <div class="toggle toggle-min">&#8226;</div>
+                <div class="toggle toggle-max">&#8226;</div>
               </div>
-              <div class="toggle toggle-min">&#8226;</div>
-              <div class="toggle toggle-max">&#8226;</div>
+
             </div>
             <div class="price-controls">
               <label class="min-price">
-                <input name="min-price" type="text" value="0">
+                <input class="min_price--input" name="min-price" type="text" value="0">
               </label>
               <label class="max-price">
-                <input name="max-price" type="text" value="30000">
+                <input class="max_price--input" name="max-price" type="text" value="30000">
               </label>
             </div>
 
@@ -175,6 +176,7 @@
               </label>
             </div>
           </div>
+          <button type="submit" class="goods_btn goods_select--btn">ПОКАЗАТЬ</button>
         </form>
       </div>
       <div class="goods_right--block">
@@ -318,10 +320,27 @@
 
           </div>
         </div>
+        <div class="goods_pages--selector">
+          <a href="#" class="goods_btn number_pages--btn home_page-btn">1</a>
+          <a href="#" class="goods_btn number_pages--btn">2</a>
+          <a href="#" class="goods_btn number_pages--btn">3</a>
+          <a href="#" class="goods_btn nex_pages--btn">СЛЕДУЮЩАЯ</a>
+        </div>
       </div>
-
     </section>
   </main>
+
+  <section class="context_page">
+    <div class="wrap-context wrapper">
+      <p class="subtitle">ПАРА СЛОВ О ПЕРФОРАТОРАХ</p>
+      <p class="text">
+        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и
+        камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+        шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены
+        отбойный молоток и ударная дрель.
+      </p>
+    </div>
+  </section>
 
 
 
@@ -412,6 +431,8 @@
 
   <script src="assets/JS/inputForm.js"></script>
   <script src="assets/JS/cartGoods.js"></script>
+  <script src="assets/JS/dubbleSlider.js"></script>
+  <!-- <script src="assets/JS/perforators.js"></script> -->
 </body>
 
 </html>
